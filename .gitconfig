@@ -1,0 +1,8 @@
+[alias]
+  st = status
+  co = checkout
+  ct = commit
+  pr = pull --rebase 
+
+[core]
+  editor = mate -w
