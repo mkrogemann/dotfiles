@@ -1,7 +1,7 @@
 [alias]
   st = status
   co = checkout
-  ct = commit
+  ci = commit
   pr = pull --rebase 
 
 [core]
