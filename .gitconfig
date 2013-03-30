@@ -2,7 +2,8 @@
   st = status
   co = checkout
   ci = commit
-  pr = pull --rebase 
+  pr = pull --rebase
+  pom = push origin master
 
 [core]
   editor = mate -w
