@@ -3,6 +3,7 @@
   co = checkout
   ci = commit
   pr = pull --rebase
+  po = push origin
   pom = push origin master
 
 [core]
