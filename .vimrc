@@ -16,3 +16,14 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
+"" No belling please
+set noerrorbells
+set visualbell
+set t_vb=
+
+"" Automatically change into current file's dir
+set autochdir
+
+"" Remove trailing whitespace
+autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+
