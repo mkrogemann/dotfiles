@@ -3,6 +3,7 @@ syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 set ruler                       " show cursor position
+set showmatch                   " show matching parens, braces, brackets
 filetype plugin indent on       " load file type plugins + indentation
 
 "" Whitespace
