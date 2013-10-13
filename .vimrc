@@ -2,6 +2,7 @@ set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
+set ruler                       " show cursor position
 filetype plugin indent on       " load file type plugins + indentation
 
 "" Whitespace
@@ -22,7 +23,8 @@ set visualbell
 set t_vb=
 
 "" Automatically change into current file's dir
-set autochdir
+"" Interesting option sometimes, not by default though...
+"" set autochdir
 
 "" Remove trailing whitespace
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
