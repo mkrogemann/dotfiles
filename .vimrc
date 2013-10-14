@@ -30,3 +30,7 @@ set t_vb=
 "" Remove trailing whitespace
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
+"" status line (endless possibilities)
+"" http://got-ravings.blogspot.de/2008/08/vim-pr0n-making-statuslines-that-own.html
+set laststatus=2
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
