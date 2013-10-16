@@ -21,7 +21,10 @@ set smartcase                   " ... unless they contain at least one capital l
 "" No belling please
 set noerrorbells
 set visualbell
-set t_vb=
+set t_vb=                       " controls the 'how' of visual bell.
+
+"" Find a lot of options documented here:
+"" http://vimdoc.sourceforge.net/htmldoc/options.html#options
 
 "" Automatically change into current file's dir
 "" Interesting option sometimes, not by default though...
@@ -34,3 +37,14 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 "" http://got-ravings.blogspot.de/2008/08/vim-pr0n-making-statuslines-that-own.html
 set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
+"" Adjust background color of Popup Menu
+:highlight Pmenu ctermbg=238 gui=bold
+
+"" Colors, eg Gary Bernhardt's scheme:
+"" https://github.com/garybernhardt/dotfiles/blob/master/.vim/colors/grb256.vim
+
+"":set t_Co=256                   " 256 colors
+"":set background=dark
+"":color grb256
+
