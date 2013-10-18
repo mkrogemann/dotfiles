@@ -21,7 +21,7 @@ set smartcase                   " ... unless they contain at least one capital l
 "" No belling please
 set noerrorbells
 set visualbell
-set t_vb=                       " controls the 'how' of visual bell.
+set t_vb=                       " controls the 'how' of visual bell (the esc seq?).
 
 "" Find a lot of options documented here:
 "" http://vimdoc.sourceforge.net/htmldoc/options.html#options
@@ -38,8 +38,9 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 set laststatus=2
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
-"" Adjust background color of Popup Menu
-:highlight Pmenu ctermbg=238 gui=bold
+"" Popup Menu Colors
+:highlight Pmenu ctermbg=238 ctermfg=blue
+:highlight PmenuSel ctermbg=blue ctermfg=black
 
 "" Colors, eg Gary Bernhardt's scheme:
 "" https://github.com/garybernhardt/dotfiles/blob/master/.vim/colors/grb256.vim
