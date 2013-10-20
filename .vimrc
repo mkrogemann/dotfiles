@@ -41,6 +41,8 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 "" Popup Menu Colors
 :highlight Pmenu ctermbg=238 ctermfg=blue
 :highlight PmenuSel ctermbg=blue ctermfg=black
+"" Bring up Menu even if only one entry, use longest match
+:set completeopt=longest,menuone
 
 "" Colors, eg Gary Bernhardt's scheme:
 "" https://github.com/garybernhardt/dotfiles/blob/master/.vim/colors/grb256.vim
