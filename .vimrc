@@ -22,6 +22,12 @@ set smartcase                   " ... unless they contain at least one capital l
 set suffixesadd+=.rb
 set path+=lib
 
+"" Buffers
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
 "" No belling please
 set noerrorbells
 set visualbell
