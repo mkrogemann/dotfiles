@@ -8,3 +8,9 @@
 
 [core]
   editor = mate -w
+
+[color]
+	ui = true
+[user]
+	email = markus@krogemann.de
+	name = Markus Krogemann
