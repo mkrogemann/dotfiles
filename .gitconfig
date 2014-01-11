@@ -6,9 +6,6 @@
   po = push origin
   pom = push origin master
 
-[core]
-  editor = mate -w
-
 [color]
 	ui = true
 [user]
