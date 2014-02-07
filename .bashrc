@@ -9,6 +9,7 @@ export EDITOR=vim
 export HISTSIZE=1000
 export GRAILS_HOME=~/dev/grails/grails-2.2.4
 export PATH=~/bin:$GRAILS_HOME/bin:$PATH
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
