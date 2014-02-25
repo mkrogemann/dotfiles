@@ -59,10 +59,10 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 "" Colors, eg Gary Bernhardt's scheme:
 "" https://github.com/garybernhardt/dotfiles/blob/master/.vim/colors/grb256.vim
-
-"":set t_Co=256                   " 256 colors
-"":set background=dark
-"":color grb256
+"" The one in current use: https://github.com/jonathanfilip/vim-lucius
+""                         http://www.vim.org/scripts/script.php?script_id=2536
+:color lucius
+:LuciusBlack        " LuciusDark, LuciusLight, LuciusBlack, LuciusWhite, *HighContrast, *LowContrast
 
 "" Highlight cursor position
 :hi CursorLine   cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkred guifg=white
