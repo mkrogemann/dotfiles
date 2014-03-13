@@ -7,6 +7,7 @@ alias ll='ls -al'
 
 export EDITOR=vim
 export HISTSIZE=1000
+export HISTFILESIZE=1000
 export GRAILS_HOME=~/dev/grails/grails-2.2.4
 export GRADLE_HOME=~/dev/groovy/gradle-1.9
 export PATH=~/bin:$GRADLE_HOME/bin:$GRAILS_HOME/bin:$PATH
