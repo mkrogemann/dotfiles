@@ -31,6 +31,9 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 
+"" Keymap
+map <F7> mzgg=G`z<CR>           " re-format / re-indent whole file
+
 "" No belling please
 set noerrorbells
 set visualbell
