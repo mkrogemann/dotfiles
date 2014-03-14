@@ -1,7 +1,8 @@
 alias nose='nosetests --rednose'
 alias rc='rebar compile'
 alias rd='rebar doc'
-alias rt='rebar eunit'
+alias rt='rebar eunit skip_deps=true'
+alias rtd='rebar eunit'
 alias be='bundle exec'
 alias ll='ls -al'
 
