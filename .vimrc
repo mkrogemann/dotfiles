@@ -5,6 +5,7 @@ set showcmd                     " display incomplete commands
 set ruler                       " show cursor position
 set showmatch                   " show matching parens, braces, brackets
 filetype plugin indent on       " load file type plugins + indentation
+set paste                       " activate 'paste' mode
 
 "" Whitespace
 set nowrap                      " don't wrap lines
