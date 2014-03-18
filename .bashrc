@@ -1,8 +1,8 @@
 alias nose='nosetests --rednose'
-alias rc='rebar compile'
-alias rd='rebar doc'
-alias rt='rebar eunit skip_deps=true'
-alias rtd='rebar eunit'
+alias rc='_rebar compile'
+alias rd='_rebar doc'
+alias rt='_rebar eunit skip_deps=true'
+alias rtd='_rebar eunit'
 alias be='bundle exec'
 alias ll='ls -al'
 
@@ -18,3 +18,7 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 
+_rebar() {
+  [ -x ./rebar ] && ./rebar $@
+  [ ! -x ./rebar ] && rebar $@
+}
