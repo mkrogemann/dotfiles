@@ -5,6 +5,7 @@ alias rt='_rebar eunit skip_deps=true'
 alias rtd='_rebar eunit'
 alias be='bundle exec'
 alias ll='ls -al'
+alias java8='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home'
 
 export EDITOR=vim
 export HISTSIZE=1000
