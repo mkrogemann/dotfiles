@@ -6,7 +6,7 @@ alias rtd='_rebar eunit'
 alias be='bundle exec'
 alias ll='ls -al'
 alias java8='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home'
-alias mongod='mongod --dbpath /usr/local/var/mongodb'
+alias mongod= 'mongod --config /usr/local/etc/mongod.conf' # 2.4.10 (brewed) likes this: 'mongod --dbpath /usr/local/var/mongodb'
 
 export EDITOR=vim
 export HISTSIZE=1000
