@@ -1,4 +1,5 @@
 alias nose='nosetests --rednose'
+alias rgd='_rebar get-deps'
 alias rc='_rebar compile'
 alias rd='_rebar doc'
 alias rt='_rebar eunit skip_deps=true'
