@@ -8,6 +8,7 @@ alias be='bundle exec'
 alias ll='ls -al'
 alias java7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
 alias mongod='mongod --config /usr/local/etc/mongod.conf' # 2.4.10 (brewed) likes this: 'mongod --dbpath /usr/local/var/mongodb'
+alias postgres='postgres -D /usr/local/var/postgres'
 
 export EDITOR=vim
 export HISTSIZE=1000
