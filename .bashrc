@@ -22,6 +22,10 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 
+# gcloud SDK
+source '/Users/markus/bin/google-cloud-sdk/path.bash.inc'
+source '/Users/markus/bin/google-cloud-sdk/completion.bash.inc'
+
 _rebar() {
   [ -x ./rebar ] && ./rebar $@
   [ ! -x ./rebar ] && rebar $@
