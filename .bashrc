@@ -11,6 +11,7 @@ alias mongod='ulimit -n 2048 && mongod --config /usr/local/etc/mongod.conf' # 2.
 alias postgres='postgres -D /usr/local/var/postgres'
 alias rabbit='/usr/local/Cellar/rabbitmq/3.3.4/sbin/rabbitmq-server'
 alias http='_http'
+alias tcpd='_tcpd'
 
 export EDITOR=vim
 export HISTSIZE=1000
@@ -40,3 +41,13 @@ _http() {
     python -m SimpleHTTPServer $1
   fi
 }
+
+_tcpd() {
+  if [ $# -eq 0 ] ; then
+    echo "Please provide port (eg tcpd 9000)"
+  else
+    sudo tcpdump -s 0 -A -i lo0 "tcp port $1 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)"
+    # print only IPv4 packets that contain data, not, for example, SYN and FIN packets and ACK-only packets
+  fi
+}
+
