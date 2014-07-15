@@ -10,6 +10,7 @@ alias java7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/
 alias mongod='ulimit -n 2048 && mongod --config /usr/local/etc/mongod.conf' # 2.4.10 (brewed) likes this: 'mongod --dbpath /usr/local/var/mongodb'
 alias postgres='postgres -D /usr/local/var/postgres'
 alias rabbit='/usr/local/Cellar/rabbitmq/3.3.4/sbin/rabbitmq-server'
+alias http='_http'
 
 export EDITOR=vim
 export HISTSIZE=1000
@@ -30,4 +31,12 @@ source '/Users/markus/bin/google-cloud-sdk/completion.bash.inc'
 _rebar() {
   [ -x ./rebar ] && ./rebar $@
   [ ! -x ./rebar ] && rebar $@
+}
+
+_http() {
+  if [ $# -eq 0 ] ; then
+    echo "Please provide port (eg http 9000)"
+  else
+    python -m SimpleHTTPServer $1
+  fi
 }
