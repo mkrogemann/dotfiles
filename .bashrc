@@ -18,7 +18,7 @@ export HISTSIZE=1000
 export HISTFILESIZE=1000
 export GRAILS_HOME=~/dev/grails/grails-2.2.4
 export GRADLE_HOME=~/dev/groovy/gradle-1.12
-export PATH=~/bin:$GRADLE_HOME/bin:$GRAILS_HOME/bin:$PATH
+export PATH=~/bin:~/.cabal/bin:$GRADLE_HOME/bin:$GRAILS_HOME/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
