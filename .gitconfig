@@ -5,6 +5,7 @@
   pr = pull --rebase
   po = push origin
   pom = push origin master
+  count = rev-list HEAD --count
 
 [color]
 	ui = true
