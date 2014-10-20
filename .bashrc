@@ -12,6 +12,7 @@ alias postgres='postgres -D /usr/local/var/postgres'
 alias rabbit='/usr/local/Cellar/rabbitmq/3.3.4/sbin/rabbitmq-server'
 alias http='_http'
 alias tcpd='_tcpd'
+alias elastic='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
 
 export EDITOR=vim
 export HISTSIZE=1000
