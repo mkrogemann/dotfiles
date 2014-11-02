@@ -13,6 +13,7 @@ alias rabbit='/usr/local/Cellar/rabbitmq/3.3.4/sbin/rabbitmq-server'
 alias http='_http'
 alias tcpd='_tcpd'
 alias elastic='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
+alias scala='scala -Dscala.color'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
