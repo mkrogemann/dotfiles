@@ -55,3 +55,6 @@ _tcpd() {
   fi
 }
 
+rtmp_open() {
+  rtmpdump -r $1 --quiet | /Applications/VLC.app/Contents/MacOS/VLC fd://0 --playlist-autostart
+}
