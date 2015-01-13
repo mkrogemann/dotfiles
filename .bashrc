@@ -33,6 +33,11 @@ source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 source '/Users/markus/bin/google-cloud-sdk/path.bash.inc'
 source '/Users/markus/bin/google-cloud-sdk/completion.bash.inc'
 
+if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+  GIT_PROMPT_THEME=Default
+  source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+fi
+
 _rebar() {
   [ -x ./rebar ] && ./rebar $@
   [ ! -x ./rebar ] && rebar $@
