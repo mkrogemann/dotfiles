@@ -8,6 +8,9 @@ set ruler                       " show cursor position
 set showmatch                   " show matching parens, braces, brackets
 filetype plugin indent on       " load file type plugins + indentation
 ""set paste                       " activate 'paste' mode
+:set history=50                 " 50 lines of history
+:set scrolloff=5                " have at least 5 lines above and below cursor
+:set relativenumber             " line numbers relative to current cursor position
 
 "" Whitespace
 set nowrap                      " don't wrap lines
@@ -26,7 +29,7 @@ set smartcase                   " ... unless they contain at least one capital l
 
 "" Jump to file
 set suffixesadd+=.rb
-set path+=lib
+set path+=lib/**,test/**
 
 "" Buffers
 nnoremap <silent> [b :bprevious<CR>
