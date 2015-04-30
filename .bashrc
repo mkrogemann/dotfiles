@@ -14,6 +14,8 @@ alias http='_http'
 alias tcpd='_tcpd'
 alias elastic='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
 alias scala='scala -Dscala.color'
+alias cassandra-start='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist'
+alias cassandra-stop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
