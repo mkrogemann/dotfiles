@@ -9,7 +9,8 @@ alias ll='ls -al'
 alias java7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home'
 alias mongod='ulimit -n 2048 && mongod --config /usr/local/etc/mongod.conf' # 2.4.10 (brewed) likes this: 'mongod --dbpath /usr/local/var/mongodb'
 alias postgres='postgres -D /usr/local/var/postgres'
-alias rabbit='/usr/local/Cellar/rabbitmq/3.3.4/sbin/rabbitmq-server'
+#alias rabbit='/usr/local/Cellar/rabbitmq/3.3.4/sbin/rabbitmq-server'
+alias rabbit='/usr/local/Cellar/rabbitmq/3.5.3/sbin/rabbitmq-server'
 alias http='_http'
 alias tcpd='_tcpd'
 alias elastic='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
@@ -24,6 +25,7 @@ export HISTSIZE=1000
 export HISTFILESIZE=1000
 export GRAILS_HOME=~/dev/grails/grails-2.2.4
 export GRADLE_HOME=~/dev/groovy/gradle-1.12
+export GRADLE_OPTS='-Xmx1024m'
 export PATH=~/bin:/usr/local/bin:~/.cabal/bin:$GRADLE_HOME/bin:$GRAILS_HOME/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
 
@@ -39,6 +41,11 @@ if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Default
   source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 
 _rebar() {
   [ -x ./rebar ] && ./rebar $@
