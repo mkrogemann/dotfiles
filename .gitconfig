@@ -3,6 +3,8 @@
   co = checkout
   ci = commit
   pr = pull --rebase
+  fp = fetch --prune
+  lg = log --graph
   po = push origin
   pom = push origin master
   count = rev-list HEAD --count
@@ -12,3 +14,4 @@
 [user]
 	email = markus@krogemann.de
 	name = Markus Krogemann
+
