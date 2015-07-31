@@ -1,4 +1,5 @@
 alias nose='nosetests --rednose'
+alias easy_install='sudo python /Library/Python/2.7/site-packages/easy_install.py'
 alias rgd='_rebar get-deps'
 alias rc='_rebar compile'
 alias rd='_rebar doc'
