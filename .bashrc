@@ -24,6 +24,7 @@ export LANG=en_US.UTF-8
 export EDITOR=vim
 export HISTSIZE=1000
 export HISTFILESIZE=1000
+export HISTCONTROL=ignoreboth:erasedups
 export GRAILS_HOME=~/dev/grails/grails-2.2.4
 export GRADLE_HOME=~/dev/groovy/gradle-1.12
 export GRADLE_OPTS='-Xmx1024m'
