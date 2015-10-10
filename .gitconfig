@@ -15,3 +15,5 @@
 	email = markus@krogemann.de
 	name = Markus Krogemann
 
+[push]
+	default = simple
