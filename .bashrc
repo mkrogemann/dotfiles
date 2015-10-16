@@ -35,10 +35,6 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 
-# gcloud SDK
-source '/Users/markus/bin/google-cloud-sdk/path.bash.inc'
-source '/Users/markus/bin/google-cloud-sdk/completion.bash.inc'
-
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Default
   source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
