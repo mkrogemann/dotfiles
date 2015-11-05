@@ -40,9 +40,10 @@ if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
 fi
+
 
 _rebar() {
   [ -x ./rebar ] && ./rebar $@
