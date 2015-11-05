@@ -8,6 +8,11 @@
   po = push origin
   pom = push origin master
   count = rev-list HEAD --count
+  dc = diff --cached
+  # Fancy logging.
+  r = !GIT_NO_PAGER=1 git l -30
+  ra = !git r --all
+  l = "!. ~/.githelpers && pretty_git_log"
 
 [color]
 	ui = true
