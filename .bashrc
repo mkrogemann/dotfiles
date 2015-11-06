@@ -18,6 +18,7 @@ alias elastic='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasti
 alias scala='scala -Dscala.color'
 alias cassandra-start='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist'
 alias cassandra-stop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist'
+alias rstudio='_rstudio'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -69,4 +70,8 @@ _tcpd() {
 
 rtmp_open() {
   rtmpdump -r $1 --quiet | /Applications/VLC.app/Contents/MacOS/VLC fd://0 --playlist-autostart
+}
+
+_rstudio() {
+  /Applications/RStudio.app/Contents/MacOS/RStudio $@ &
 }
