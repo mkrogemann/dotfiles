@@ -25,10 +25,7 @@ export EDITOR=vim
 export HISTSIZE=2000
 export HISTFILESIZE=2000
 export HISTCONTROL=ignoreboth:erasedups
-export GRAILS_HOME=~/dev/grails/grails-2.2.4
-export GRADLE_HOME=~/dev/groovy/gradle-1.12
-export GRADLE_OPTS='-Xmx1024m'
-export PATH=~/bin:/usr/local/bin:~/.cabal/bin:$GRADLE_HOME/bin:$GRAILS_HOME/bin:$PATH
+export PATH=~/bin:/usr/local/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
