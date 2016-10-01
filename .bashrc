@@ -7,7 +7,7 @@ alias rt='_rebar eunit skip_deps=true'
 alias rtd='_rebar eunit'
 alias be='bundle exec'
 alias ll='ls -al'
-alias java7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home'
+alias java7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home'
 alias mongod='ulimit -n 2048 && mongod --config /usr/local/etc/mongod.conf' # 2.4.10 (brewed) likes this: 'mongod --dbpath /usr/local/var/mongodb'
 alias postgres='postgres -D /usr/local/var/postgres'
 #alias rabbit='/usr/local/Cellar/rabbitmq/3.3.4/sbin/rabbitmq-server'
@@ -26,7 +26,7 @@ export HISTSIZE=2000
 export HISTFILESIZE=2000
 export HISTCONTROL=ignoreboth:erasedups
 export PATH=~/bin:/usr/local/bin:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
 
 source $(brew --prefix)/etc/bash_completion.d/brew
 
