@@ -28,7 +28,7 @@ export HISTCONTROL=ignoreboth:erasedups
 export PATH=~/bin:/usr/local/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
 
-source $(brew --prefix)/etc/bash_completion.d/brew
+source $(brew --prefix)/etc/bash_completion.d/brew_bash_completion.sh
 
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Default
