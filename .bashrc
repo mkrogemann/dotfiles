@@ -36,6 +36,10 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
+
+[[ -s "$HOME/.dev-envs" ]] && source "$HOME/.dev-envs"
+
 _rebar() {
   [ -x ./rebar ] && ./rebar $@
   [ ! -x ./rebar ] && rebar $@
