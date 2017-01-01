@@ -41,6 +41,9 @@ fi
 
 [[ -s "$HOME/.dev-envs" ]] && source "$HOME/.dev-envs"
 
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+
 _rebar() {
   [ -x ./rebar ] && ./rebar $@
   [ ! -x ./rebar ] && rebar $@
