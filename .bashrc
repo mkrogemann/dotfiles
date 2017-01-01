@@ -44,6 +44,9 @@ fi
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
+# http://stackoverflow.com/questions/14177700/copy-current-command-at-bash-prompt-to-clipboard
+bind '"\C-]":"\C-e\C-u pbcopy <<"EOF"\n\C-y\nEOF\n"'
+
 _rebar() {
   [ -x ./rebar ] && ./rebar $@
   [ ! -x ./rebar ] && rebar $@
