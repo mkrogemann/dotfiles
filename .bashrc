@@ -24,7 +24,7 @@ export HISTSIZE=2000
 export HISTFILESIZE=2000
 export HISTCONTROL=ignoreboth:erasedups
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
-export GOPATH=$HOME/dev/gopath
+export GOPATH=$HOME/dev/qixxit/gocode
 export PATH=~/bin:/usr/local/bin:$PATH:$GOPATH/bin
 
 source $(brew --prefix)/etc/bash_completion.d/brew_bash_completion.sh
