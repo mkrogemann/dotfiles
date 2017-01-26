@@ -45,6 +45,8 @@ fi
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
+[ -f /Users/markus/.travis/travis.sh ] && source /Users/markus/.travis/travis.sh
+
 # http://stackoverflow.com/questions/14177700/copy-current-command-at-bash-prompt-to-clipboard
 bind '"\C-]":"\C-e\C-u pbcopy <<"EOF"\n\C-y\nEOF\n"'
 
