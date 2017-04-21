@@ -25,7 +25,7 @@ export HISTFILESIZE=2000
 export HISTCONTROL=ignoreboth:erasedups
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
 export GOPATH=$HOME/dev/qixxit/gocode
-export PATH=~/bin:/usr/local/bin:$PATH:$GOPATH/bin
+export PATH=~/bin:/usr/local/bin:/usr/local/opt/gpg-agent/bin:$PATH:$GOPATH/bin
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
@@ -47,6 +47,15 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
 [ -f /Users/markus/.travis/travis.sh ] && source /Users/markus/.travis/travis.sh
+
+GPG_TTY=$(tty)
+export GPG_TTY
+
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+    . "${HOME}/.gpg-agent-info"
+    export GPG_AGENT_INFO
+    export SSH_AUTH_SOCK
+ fi
 
 # http://stackoverflow.com/questions/14177700/copy-current-command-at-bash-prompt-to-clipboard
 bind '"\C-]":"\C-e\C-u pbcopy <<"EOF"\n\C-y\nEOF\n"'
