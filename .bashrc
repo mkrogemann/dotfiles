@@ -8,14 +8,11 @@ alias mts='mix test --stale'
 alias java7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home'
 alias mongod='ulimit -n 2048 && mongod --config /usr/local/etc/mongod.conf' # 2.4.10 (brewed) likes this: 'mongod --dbpath /usr/local/var/mongodb'
 alias postgres='postgres -D /usr/local/var/postgres'
-#alias rabbit='/usr/local/Cellar/rabbitmq/3.3.4/sbin/rabbitmq-server'
-alias rabbit='/usr/local/Cellar/rabbitmq/3.5.3/sbin/rabbitmq-server'
 alias http='_http'
 alias tcpd='_tcpd'
 alias scala='scala -Dscala.color'
-alias cassandra-start='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist'
-alias cassandra-stop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist'
 alias rstudio='_rstudio'
+alias redis='redis-server /usr/local/etc/redis.conf'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
