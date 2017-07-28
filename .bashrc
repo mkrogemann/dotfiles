@@ -22,6 +22,7 @@ export HISTFILESIZE=2000
 export HISTCONTROL=ignoreboth:erasedups
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
 export GOPATH=$HOME/dev/qixxit/gocode
+export ERL_AFLAGS="-kernel shell_history enabled"
 export PATH=~/bin:/usr/local/bin:/usr/local/opt/gpg-agent/bin:$PATH:$GOPATH/bin
 
 export NVM_DIR="$HOME/.nvm"
