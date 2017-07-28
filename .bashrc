@@ -44,6 +44,8 @@ fi
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
+source /usr/local/opt/autoenv/activate.sh
+
 [ -f /Users/markus/.travis/travis.sh ] && source /Users/markus/.travis/travis.sh
 
 GPG_TTY=$(tty)
