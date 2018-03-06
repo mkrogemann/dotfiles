@@ -9,6 +9,10 @@
   pom = push origin master
   count = rev-list HEAD --count
   dc = diff --cached
+  # squash helpers
+  branch-current = rev-parse --symbolic-full-name --abbrev-ref HEAD
+  number-of-commits-since-master = "! sh -c 'git log master..`git branch-current` --oneline | wc -l | tr -d \" \"'"
+  squash = "! sh -c 'git rebase --interactive HEAD~`git number-of-commits-since-master`'"
   # Fancy logging.
   r = !GIT_NO_PAGER=1 git l -30
   ra = !git r --all
@@ -22,3 +26,5 @@
 
 [push]
 	default = simple
+[rebase]
+	autosquash = true
