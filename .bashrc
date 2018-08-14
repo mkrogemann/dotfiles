@@ -21,9 +21,6 @@ export GOPATH=$HOME/dev/qixxit/gocode
 export ERL_AFLAGS="-kernel shell_history enabled"
 export PATH=~/bin:/usr/local/bin:/usr/local/opt/gpg-agent/bin:$PATH:$GOPATH/bin
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Default
   source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
