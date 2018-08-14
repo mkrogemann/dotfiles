@@ -1,8 +1,3 @@
-alias rgd='_rebar get-deps'
-alias rc='_rebar compile'
-alias rd='_rebar doc'
-alias rt='_rebar eunit skip_deps=true'
-alias rtd='_rebar eunit'
 alias ll='ls -al'
 alias mts='mix test --stale'
 alias java7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home'
@@ -59,11 +54,6 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
 
 # http://stackoverflow.com/questions/14177700/copy-current-command-at-bash-prompt-to-clipboard
 bind '"\C-]":"\C-e\C-u pbcopy <<"EOF"\n\C-y\nEOF\n"'
-
-_rebar() {
-  [ -x ./rebar ] && ./rebar $@
-  [ ! -x ./rebar ] && rebar $@
-}
 
 _http() {
   if [ $# -eq 0 ] ; then
