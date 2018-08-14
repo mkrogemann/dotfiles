@@ -1,4 +1,5 @@
 alias ll='ls -al'
+alias be='bundle exec'
 alias mts='mix test --stale'
 alias java7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home'
 alias mongod='ulimit -n 2048 && mongod --config /usr/local/etc/mongod.conf' # 2.4.10 (brewed) likes this: 'mongod --dbpath /usr/local/var/mongodb'
