@@ -4,7 +4,7 @@ alias mts='mix test --stale'
 alias java7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home'
 alias mongod='ulimit -n 2048 && mongod --config /usr/local/etc/mongod.conf' # 2.4.10 (brewed) likes this: 'mongod --dbpath /usr/local/var/mongodb'
 alias postgres='postgres -D /usr/local/var/postgres'
-alias http='_http'
+alias http_server='_http_server'
 alias tcpd='_tcpd'
 alias scala='scala -Dscala.color'
 alias rstudio='_rstudio'
@@ -53,7 +53,7 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
 # http://stackoverflow.com/questions/14177700/copy-current-command-at-bash-prompt-to-clipboard
 bind '"\C-]":"\C-e\C-u pbcopy <<"EOF"\n\C-y\nEOF\n"'
 
-_http() {
+_http_server() {
   if [ $# -eq 0 ] ; then
     echo "Please provide port (eg http 9000)"
   else
