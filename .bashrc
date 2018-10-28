@@ -23,6 +23,7 @@ export HISTCONTROL=ignoreboth:erasedups
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
 export ERL_AFLAGS="-kernel shell_history enabled"
 export PATH=~/bin:/usr/local/bin:/usr/local/opt/gpg-agent/bin:$PATH:$GOPATH/bin
+export SILENT_TESTS=true
 
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Default
