@@ -54,6 +54,10 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
     export SSH_AUTH_SOCK
  fi
 
+# SDKMAN - type sdk current to get an overview of what is installed
+export SDKMAN_DIR="/Users/markus/.sdkman"
+[[ -s "/Users/markus/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/markus/.sdkman/bin/sdkman-init.sh"
+
 # http://stackoverflow.com/questions/14177700/copy-current-command-at-bash-prompt-to-clipboard
 bind '"\C-]":"\C-e\C-u pbcopy <<"EOF"\n\C-y\nEOF\n"'
 
