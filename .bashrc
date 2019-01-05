@@ -6,13 +6,6 @@ alias http_server='_http_server'
 alias tcpd='_tcpd'
 alias rstudio='_rstudio'
 alias redis='redis-server /usr/local/etc/redis.conf'
-# Ruby/Rails
-alias be='bundle exec'
-alias mig='bin/rails db:migrate'
-alias migt='bin/rails db:migrate RAILS_ENV=test'
-alias rs='bin/rails server'
-alias rc='bin/rails console'
-alias rt='bin/rails test'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
