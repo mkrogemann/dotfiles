@@ -13,9 +13,10 @@ export EDITOR=vim
 export HISTSIZE=2000
 export HISTFILESIZE=2000
 export HISTCONTROL=ignoreboth:erasedups
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
 export ERL_AFLAGS="-kernel shell_history enabled"
-export PATH=~/bin:/usr/local/bin:/usr/local/opt/gpg-agent/bin:$PATH:$GOPATH/bin
+export MACTEX_PATH="/usr/local/texlive/2019/bin/x86_64-darwin"
+export PATH=~/bin:/usr/local/bin:/usr/local/opt/gpg-agent/bin:$PATH:$GOPATH/bin:$MACTEX_PATH
 
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Default
