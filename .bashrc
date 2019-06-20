@@ -6,6 +6,7 @@ alias http_server='_http_server'
 alias tcpd='_tcpd'
 alias rstudio='_rstudio'
 alias redis='redis-server /usr/local/etc/redis.conf'
+alias cherl='_cherl'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -57,6 +58,14 @@ export SDKMAN_DIR="/Users/markus/.sdkman"
 
 # http://stackoverflow.com/questions/14177700/copy-current-command-at-bash-prompt-to-clipboard
 bind '"\C-]":"\C-e\C-u pbcopy <<"EOF"\n\C-y\nEOF\n"'
+
+_cherl() {
+  if [ $# -eq 0 ] ; then
+    echo "Please provide the Erlang version to use (eg cherl 20.3)"
+  else
+    . ~/.kerl/$1/activate
+  fi
+}
 
 _http_server() {
   if [ $# -eq 0 ] ; then
