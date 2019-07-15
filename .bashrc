@@ -3,7 +3,6 @@ alias mts='mix test --stale'
 alias postgres='postgres -D /usr/local/var/postgres'
 alias http_server='_http_server'
 alias tcpd='_tcpd'
-alias rstudio='_rstudio'
 alias redis='redis-server /usr/local/etc/redis.conf'
 alias cherl='_cherl'
 
@@ -87,6 +86,3 @@ rtmp_open() {
   rtmpdump -r $1 --quiet | /Applications/VLC.app/Contents/MacOS/VLC fd://0 --playlist-autostart
 }
 
-_rstudio() {
-  /Applications/RStudio.app/Contents/MacOS/RStudio $@ &
-}
