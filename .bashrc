@@ -3,7 +3,6 @@ alias mts='mix test --stale'
 alias postgres='postgres -D /usr/local/var/postgres'
 alias http_server='_http_server'
 alias tcpd='_tcpd'
-alias redis='redis-server /usr/local/etc/redis.conf'
 alias cherl='_cherl'
 
 export LC_ALL=en_US.UTF-8
