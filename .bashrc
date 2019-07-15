@@ -1,6 +1,5 @@
 alias ll='ls -al'
 alias mts='mix test --stale'
-alias mongod='ulimit -n 2048 && mongod --config /usr/local/etc/mongod.conf' # 2.4.10 (brewed) likes this: 'mongod --dbpath /usr/local/var/mongodb'
 alias postgres='postgres -D /usr/local/var/postgres'
 alias http_server='_http_server'
 alias tcpd='_tcpd'
