@@ -4,6 +4,7 @@ alias postgres='postgres -D /usr/local/var/postgres'
 alias http_server='_http_server'
 alias tcpd='_tcpd'
 alias cherl='_cherl'
+alias ctas='_ctas'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -61,6 +62,16 @@ _cherl() {
     echo "Please provide the Erlang version to use (eg cherl 20.3)"
   else
     . ~/.kerl/$1/activate
+  fi
+}
+
+_ctas() {
+  if [ $# -eq 0 ] ; then
+    echo "Please provide the test that you want to run (ctas test/my_test_SUITE.erl)"
+  else
+    set -x
+    ./rebar3 ct --suite test/01start_SUITE.erl,$1,test/zz_finish_SUITE.erl
+    { set +x ;} 2> /dev/null
   fi
 }
 
