@@ -21,7 +21,6 @@
 [color]
 	ui = true
 [user]
-	email = markus@krogemann.de
 	name = Markus Krogemann
 
 [push]
